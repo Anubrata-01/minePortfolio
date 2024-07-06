@@ -1,0 +1,14 @@
+.navmenu{
+    width:100%;
+    /* border: 2px solid black; */
+    display:flex;
+    justify-content:center;
+    cursor:pointer;
+    
+}
+.navmenu:hover {
+    transition: all 0.3s ease;
+    /* Add the properties you want to change on hover, for example: */
+    background-color: #f0f0f0; /* Example property */
+    border-color: #666;        /* Example property */
+}
