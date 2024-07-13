@@ -12,3 +12,46 @@
     background-color: #f0f0f0; /* Example property */
     border-color: #666;        /* Example property */
 }
+
+/* Add this to your CSS file, e.g., App.css or Education.css */
+
+.education-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px;
+  }
+  
+  .education-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+    padding: .43rem;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .degree {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 0.2rem;
+  }
+  
+  .college {
+    font-size: .9rem;
+    color: #777;
+    margin-bottom: 0.3rem;
+  }
+  
+  .duration {
+    font-size: .8rem;
+    color: #999;
+  }
+  

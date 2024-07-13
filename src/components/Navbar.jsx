@@ -63,7 +63,7 @@ const Navbar = () => {
     <a href="#home" className="navmenu p-2 text-orange-500 uppercase" aria-label="Home" role="menuitem">
       Home
     </a>
-    <a href="#about" className="navmenu p-2 text-orange-500 uppercase" aria-label="About" role="menuitem">
+    <a href="#about" className="navmenu p-2 text-orange-500 uppercase delay-200 ease-in-out" aria-label="About" role="menuitem">
       About
     </a>
     <a href="#project" className="navmenu p-2 text-orange-500 uppercase" aria-label="Project" role="menuitem">
