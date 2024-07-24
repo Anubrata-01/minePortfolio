@@ -10,7 +10,7 @@ const Navbar = () => {
     setDisplayNavItems((prev) => !prev);
   };
   const titleLogo = useMemo(() => {
-    return "src/assets/myimg.gif";
+    return "src/components/myimg.gif"
   }, []);
   return (
     <div className="w-full p-4 ">
@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="ml-[6%] md:ml-[5%] cursor-pointer">
   <picture className="text-orange-950 box-border">
     <source
-      srcSet="src/assets/myimg.gif"
+      srcSet="src\components\myimg.gif"
       media="(min-width: 1000px)"
       width="1000"
       height="400"

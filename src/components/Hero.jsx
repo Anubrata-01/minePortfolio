@@ -1,36 +1,43 @@
+import React from 'react';
+import ReactTypingEffect from 'react-typing-effect';
 
 const Hero = () => {
-
   return (
-    <div className="  pt-10  flex  md:justify-evenly  ">
-      <div className="w-full md:w-[90%] h-[35%] md:h-auto border-box  flex flex-col justify-center md:flex-row md:justify-evenly items-center md:items-start font-bold">
-        <div className=" w-[95%] box-border p-3 text-white md:w-[45%] md:mt-20 mt-0 flex-col justify-center items-center">
-          <h1 className=" text-5xl text-center md:text-start  md:text-7xl break-words text-[rgb(255,0,79)]">
-            Welcome !
+    <div className="pt-10 flex justify-center">
+      <div className="w-full max-w-7xl flex flex-col md:flex-row items-center md:items-start justify-between">
+        <div className="w-full md:w-5/12 p-3 text-white md:mt-20">
+          <h1 className="text-5xl md:text-7xl text-center md:text-left text-[#ff004f] font-semibold">
+            Welcome!
           </h1>
-          <div className=" md:text-3xl text-3xl mt-5 text-center md:text-start">
-            <span className=" text-[#ff004f]">I</span>{" "}
-            <span className="">am a</span>{" "}
-            <span className=" text-[#ff004f]">FrontEnd</span>{" "}
-            <span className="">Developer</span>
-            <p className="mt-5 text-[#ff004f]">
-              From <span className=" text-white">Kolkata,</span>{" "}
-              <span className="">WB</span>
-            </p>
+          <div className="text-3xl mt-5 text-center md:text-left font-extrabold">
+            <ReactTypingEffect
+              text={[
+                "I am a FrontEnd Developer",
+                "From Kolkata, WB",
+              ]}
+              speed={50}
+              eraseSpeed={50} 
+              eraseDelay={1000}
+              typingDelay={500}
+              cursorClassName="text-[#ff004f]"
+            />
+            <div className="mt-16 flex justify-center md:justify-start">
+              <a 
+                href="src\components\myResume1 (1)[1] (1).pdf" 
+                download 
+                className=" bg-cyan-500 text-white p-2 text-lg rounded-md shadow-md hover:bg-[#e7a4b6] transition-all duration-300"
+              >
+                Download CV
+              </a>
+            </div>
           </div>
         </div>
-        <div className="w-[95%] mt-16 md:mt-0 p-3 text-white md:w-[50%]">
-          <picture>
+        <div className="w-full md:w-5/12 mt-16 md:mt-0 p-3">
           <img
-              src="src/assets/mynewImage.avif"
-              alt="myImage"
-              className="w-full h-[50%] rounded-md object-cover md:w-full md:h-[500px] md:object-cover"
-            />
-            <source
-              srcSet="src/assets/mynewImage.avif"
-              // media="(min-width: 768px)"
-            />
-          </picture>
+            src="src/components/mynewImage.avif"
+            alt="Developer"
+            className="w-full h-auto md:h-[500px] rounded-md object-cover"
+          />
         </div>
       </div>
     </div>
@@ -38,3 +45,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
