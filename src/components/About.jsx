@@ -28,7 +28,7 @@ const About = () => {
         </div>
         <div className="w-full md:w-[48%] mt-16 md:mt-0 p-3">
           <img
-            src="src\components\AnubrataImage.jpg"
+            src="\AnubrataImage.jpg"
             alt="Anubrata"
             className="w-full h-auto md:h-[500px] rounded-md object-cover"
           />

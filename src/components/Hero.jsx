@@ -23,7 +23,7 @@ const Hero = () => {
             />
             <div className="mt-16 flex justify-center md:justify-start">
               <a 
-                href="src\components\myResume1 (1)[1] (1).pdf" 
+                href="\myResume1 (1)[1] (1).pdf" 
                 download 
                 className=" bg-cyan-500 text-white p-2 text-lg rounded-md shadow-md hover:bg-[#e7a4b6] transition-all duration-300"
               >
@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
         <div className="w-full md:w-5/12 mt-16 md:mt-0 p-3">
           <img
-            src="src/components/mynewImage.avif"
+            src="/mynewImage.avif"
             alt="Developer"
             className="w-full h-auto md:h-[500px] rounded-md object-cover"
           />
