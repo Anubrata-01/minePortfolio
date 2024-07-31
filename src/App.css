@@ -54,4 +54,6 @@
     font-size: .8rem;
     color: #999;
   }
-  
+  .title{
+    font-style:italic;
+  }

@@ -1,83 +1,74 @@
-
 import { AlignJustify, X } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
   const [displayNavItems, setDisplayNavItems] = useState(false);
 
   const handleMenu = () => {
-    console.log("button clicked");
     setDisplayNavItems((prev) => !prev);
   };
-  const titleLogo = useMemo(() => {
-    return "/myimg.gif"
-  }, []);
+
   return (
-    <div className="w-full p-4 ">
-      <div className="flex justify-between items-center w-[95%] ml-4 relative">
-      <div className="ml-[6%] md:ml-[5%] cursor-pointer">
-  <picture className="text-orange-950 box-border">
-    <source
-      srcSet="/myimg.gif"
-      media="(min-width: 1000px)"
-      width="1000"
-      height="400"
-    />
-    <img 
-      src={titleLogo} 
-      alt="Title Logo" 
-      className="w-[40%] md:w-[200px] p-0 bg-black" 
-    />
-  </picture>
-</div>
+    <nav className="bg-black  shadow-md w-full p-4 relative z-10">
+      <div className="w-[85%] mx-auto flex justify-between gap-12 items-center my-4">
+        {/* Logo */}
+        <div className="flex items-center">
+          <span className="text-lg md:text-xl text-orange-700 font-bold tracking-wide">
+            <span className=" title bg-gradient-to-r from-orange-400 to-orange-700 bg-clip-text text-transparent">
+              Anubrata Chanda
+            </span>
+          </span>
+        </div>
 
+        {/* Navigation Links */}
+        <div className="hidden lg:flex justify-center items-center space-x-6">
+          <a href="#home" className="text-orange-600 hover:text-gray-600" aria-label="Home">
+            Home
+          </a>
+          <a href="#about" className="text-orange-600 hover:text-gray-600" aria-label="About">
+            About
+          </a>
+          <a href="#project" className="text-orange-600 hover:text-gray-600" aria-label="Project">
+            Project
+          </a>
+          <a href="#contact" className="text-orange-600 hover:text-gray-600" aria-label="Contact">
+            Contact
+          </a>
+        </div>
 
-        {/* Hidden on large screens, visible on medium and smaller screens */}
+        {/* Menu Button for Small Screens */}
         <button
-        className="lg:hidden bg-violet-600 rounded-md mr-[5%]"
-        onClick={handleMenu}
-        aria-label={displayNavItems ? "Close menu" : "Open menu"}
-      >
-        {!displayNavItems ? <AlignJustify /> : <X />}
-      </button>
-
-        {/* Nav items for large screens */}
-        <div className="hidden lg:flex gap-4 md:mr-[5%]">
-  <a href="#home" className="p-2 text-orange-500 uppercase cursor-pointer" aria-label="Home">
-    Home
-  </a>
-  <a href="#about" className="p-2 text-orange-500 uppercase" aria-label="About">
-    About
-  </a>
-  <a href="#project" className="p-2 text-orange-500 uppercase" aria-label="Project">
-    Project
-  </a>
-  <a href="#contact" className="p-2 text-orange-500 uppercase" aria-label="Contact">
-    Contact
-  </a>
-</div>
-
-{/* Nav items for medium and smaller screens */}
-{displayNavItems && (
-  <div className="lg:hidden w-[400px] md:w-[300px] mt-72 p-4 flex flex-col absolute -right-4 gap-3 bg-emerald-800" role="menu">
-    <a href="#home" className="navmenu p-2 text-orange-500 uppercase" aria-label="Home" role="menuitem">
-      Home
-    </a>
-    <a href="#about" className="navmenu p-2 text-orange-500 uppercase delay-200 ease-in-out" aria-label="About" role="menuitem">
-      About
-    </a>
-    <a href="#project" className="navmenu p-2 text-orange-500 uppercase" aria-label="Project" role="menuitem">
-      Project
-    </a>
-    <a href="#contact" className="navmenu p-2 text-orange-500 uppercase" aria-label="Contact" role="menuitem">
-      Contact
-    </a>
-  </div>
-)}
-
+          className="lg:hidden p-2 bg-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600"
+          onClick={handleMenu}
+          aria-label={displayNavItems ? "Close menu" : "Open menu"}
+          aria-controls="nav-items"
+        >
+          {!displayNavItems ? <AlignJustify className="w-4 h-4 md:w-4 md:h-4" /> : <X className="w-4 h-4 md:w-4 md:h-4" />}
+        </button>
       </div>
-    </div>
+
+      {/* Navigation Links for Small Screens */}
+      {displayNavItems && (
+        <div id="nav-items" className="lg:hidden w-full p-4 mt-2 bg-gradient-to-b from-gray-100 to-gray-300">
+          <a href="#home" className="block p-2 text-orange-600" aria-label="Home">
+            Home
+          </a>
+          <a href="#about" className="block p-2 text-orange-600" aria-label="About">
+            About
+          </a>
+          <a href="#project" className="block p-2 text-orange-600" aria-label="Project">
+            Project
+          </a>
+          <a href="#contact" className="block p-2 text-orange-600" aria-label="Contact">
+            Contact
+          </a>
+        </div>
+      )}
+    </nav>
   );
 };
 
 export default Navbar;
+
+
+
