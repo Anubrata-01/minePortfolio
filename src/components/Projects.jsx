@@ -8,7 +8,7 @@ const Projects = () => {
       description: "A Netflix-inspired movie website with AI-powered recommendations using GPT.",
       image: "https://assets.nflxext.com/ffe/siteui/vlv3/d1532433-07b1-4e39-a920-0f08b81a489e/67033404-2df8-42e0-a5a0-4c8288b4da2c/IN-en-20231120-popsignuptwoweeks-perspective_alpha_website_small.jpg",
       github: "https://github.com/Anubrata-01/netflix-gpt1",
-      live: "https://netflix-gpt1.vercel.app/",
+      live: "https://netflix-gpt1-0ajb.onrender.com",
       tags: ["React", "GPT API", "Firebase", "Tailwind CSS","Redux Toolkit"]
     },
     {
@@ -16,7 +16,7 @@ const Projects = () => {
       description: "A Swiggy-like food delivery platform with real-time order tracking and restaurant management.",
       image: "https://placehold.co/600x400?text=Food+Delivery+App",
       github: "https://github.com/Anubrata-01/foodStore",
-      live: "https://your-food-delivery-app.com",
+      live: "https://foodmaniaclient.onrender.com",
       tags: ["React","Tailwind CSS", "Node.js", "MongoDB", "Jotai","RazorPay","Supabase"]
     },
     {
