@@ -14,10 +14,10 @@ const Projects = () => {
     {
       title: "Food Delivery Website",
       description: "A Swiggy-like food delivery platform with real-time order tracking and restaurant management.",
-      image: "https://placehold.co/600x400?text=Food+Delivery+App",
+      image: "./foodstore.png",
       github: "https://github.com/Anubrata-01/foodStore",
-      live: "https://foodmaniaclient.onrender.com",
-      tags: ["React","Tailwind CSS", "Node.js", "MongoDB", "Jotai","RazorPay","Supabase"]
+      live: "https://foodmaniaclient.onrender.com/",
+      tags: ["React","Tailwind CSS", "Node.js", "MongoDB", "Jotai","RazorPay","Appwrite"]
     },
     {
       title: "Weather Dashboard",
