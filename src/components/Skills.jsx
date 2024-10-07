@@ -15,7 +15,7 @@ const Skills = () => {
     { name: 'Express', icon: <SiExpress className="text-gray-500" /> },
     { name: 'MongoDB', icon: <SiMongodb className="text-green-600" /> },
     { name: 'Next.js', icon: <SiNextdotjs className="text-black" /> },
-    { name: 'Socket.io', icon: <SiSocketdotio className="text-gray-600" /> },
+  
   ];
   
 

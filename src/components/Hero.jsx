@@ -23,7 +23,7 @@ const Hero = () => {
             />
             <div className="mt-16 flex justify-center md:justify-start">
               <a 
-                href="/AnubrataResumeTemplate.pdf" 
+                href="/AnubrataFrontend.pdf" 
                 download 
                 className=" bg-cyan-500 text-white p-2 text-lg rounded-md shadow-md hover:bg-[#e7a4b6] transition-all duration-300"
               >
