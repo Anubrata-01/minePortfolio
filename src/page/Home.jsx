@@ -9,7 +9,7 @@ import Projects from "../components/Projects"
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-[#D9E4E0]">
         <Navbar/>
         <Hero/>
         <About/>
